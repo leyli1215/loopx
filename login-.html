@@ -62,6 +62,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 10px;
+      margin: 20px;
+      padding-bottom: 40px;
     }
 
     .column {
@@ -80,22 +82,29 @@
   </head>
 
   <body>
-    <div> LoopX</div>
+     
     <div class="container">
+      
       <div class="column">
-        <img src = "map.jpg"; style=" height: 150px; width: 300px"</img>
-        <button id = "searchButton"> Search maps</button>
+       
+        <button id = "searchButton"> <img src = "mappoint.jpeg" style = "height: 150px; width: 300px" </button>
       </div>
-      <div class="column"> <img src = "upcycle.jpg"; style=" height: 150px; width: 300px"</img>
-       <button id = "upcycleButton"> Upcycle </button></div>
-      <div class="column"> <img src = "shop.jpg"; style=" height: 150px; width: 300px"</img>
-       <button id = "shopButton"> Shop </button> </div>
-      <div class="column"> <img src = "discussions.jpg"; style=" height: 150px; width: 300px"</img>
-       <button id = "discussButton""> Discuss</button></div>
-    </div>
+      <div class="column">
+      <button id = "shopButton"> <img src = "shopper.jpeg" style = "height: 150px; width: 300px" </button>
+      </div>
+        
+      <div class="column"> 
+       <button id = "upcycleButton"> <img src = "cycle.jpeg" style = "height: 150px; width: 300px" </button>
+      </div>
+      <div class="column">  <button id = "discussButton"> <img src = "chat.jpeg" style = "height: 150px; width: 300px" </button>
+     
+     </div>
   </body>
+  
 
   <script>
+
+    
       // Add event listeners to each button
       document.getElementById("searchButton").addEventListener("click", function() {
           window.location.href = "maps.html";

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+
+
+  <div class="navbar">
+
+    <img src="logo.png" style="height: 80px; width: 80px;">
+
+
+    <div class="links">
+      <a href="login.html">Login</a>
+      <a href="index.html">Home</a>
+      <a href="connect-with-brand.html">Connect with Brand</a>
+      <a href="learn-more.html">Learn More</a>
+      <a href="discussions.html">Discussions</a>
+    </div>
+  </div>
+  </div>
+
+  <title>Navigation Bar</title>
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: right;
+
+
+      color: white;
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: black;
+      text-decoration: none;
+      margin: 0 15px;
+
+    }
+
+    .navbar img {
+      margin-left: 0%;
+
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div>
+    <img height= 500vh img width = 100% src="banner.png">
+  </div>
+
+  <title>4 Columns</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+    }
+
+    .column {
+      
+       
+      text-align: center;
+    }
+
+    html {
+      height: 100%;
+      width: 100%;
+      background: white;
+      /* Vibrant Pink to Cyan to Yellow gradient */
+    }
+  </style>
+  </head>
+
+  <body>
+    <div> LoopX</div>
+    <div class="container">
+      <div class="column">
+        <img src = "map.jpg"; style=" height: 150px; width: 300px"</img>
+        <button id = "searchButton"> Search maps</button>
+      </div>
+      <div class="column"> <img src = "upcycle.jpg"; style=" height: 150px; width: 300px"</img>
+       <button id = "upcycleButton"> Upcycle </button></div>
+      <div class="column"> <img src = "shop.jpg"; style=" height: 150px; width: 300px"</img>
+       <button id = "shopButton"> Shop </button> </div>
+      <div class="column"> <img src = "discussions.jpg"; style=" height: 150px; width: 300px"</img>
+       <button id = "discussButton""> Discuss</button></div>
+    </div>
+  </body>
+
+  <script>
+      // Add event listeners to each button
+      document.getElementById("searchButton").addEventListener("click", function() {
+          window.location.href = "maps.html";
+      });
+
+      document.getElementById("upcycleButton").addEventListener("click", function() {
+          window.location.href = "ways-to-upcycle.html";
+      });
+
+      document.getElementById("shopButton").addEventListener("click", function() {
+          window.location.href = "shopping.html";
+      });
+
+      document.getElementById("discussButton").addEventListener("click", function() {
+          window.location.href = "discussions.html";
+      });
+  </script>
+
+</html>
